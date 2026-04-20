@@ -1,0 +1,49 @@
+/* style.css */
+
+#hero {
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.6)),
+        url('assets/img/fachadagoldencar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-scrolled {
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.fade-in {
+    animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Efeito Hover nos Cards */
+.service-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* assets/css/style.css */
+
+#hero {
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.6)),
+        url('../img/fachadagoldencar.jpg'); /* O '../' é a chave para a imagem aparecer */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ... restante do código permanece igual ... */
